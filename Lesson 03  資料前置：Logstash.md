@@ -1,11 +1,13 @@
 <h2 align="center">Lesson 03: 資料前置：Logstash</h2>
 
 ### 3-1 Logstash 概論
-Logstash 扮演原始資料與儲存庫間的橋梁，其工作分為三類：<br>
+Logstash 扮演`原始資料與儲存庫間的橋梁`，其工作分為三類：<br>
 - input: 從各種來源取得資料
-- filter: 將原始資料做加工 (清洗、轉換等)
-- output: 將資料儲放入資料庫<br>
-註：對於無即時串流需求者，Logstash, Kafka 均可扮演取資料之中介角色。
+- `filter`: 將原始資料做加工 (清洗、轉換等)
+- output: 將資料儲放入資料庫
+<pre>
+對於無即時串流需求者，Logstash, Kafka 均可扮演取資料之中介角色。
+</pre>
 
 ---
 ### 3-2 安裝流程

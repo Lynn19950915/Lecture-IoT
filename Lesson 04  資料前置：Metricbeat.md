@@ -1,7 +1,7 @@
 <h2 align="center">Lesson 04: 資料前置：Metricbeat</h2>
 
 ### 4-1 Metricbeat 概論
-1. Metricbeat 具備輕量化、即時之特色，能協助串流資料之處理工作。
+1. Metricbeat 具備`輕量化、即時`之特色，能協助串流資料之處理工作。
 
 2. 與 Logstash 蒐集、前處理等工作不衝突，可銜接於前做為資料來源。
 - 需串流處理，資料需要清洗、轉換：`Metricbeat－Logstash－Elasticsearch－Kibana`

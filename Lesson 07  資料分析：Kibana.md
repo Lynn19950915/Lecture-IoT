@@ -1,9 +1,9 @@
 <h2 align="center">Lesson 07: 資料分析：Kibana</h2>
 
 ### 7-1 Kibana 概論
-Kibana 是很好的資料視覺化介面，主要可執行下列功能：<br>
+Kibana 是很好的資料`視覺化介面`，主要可執行下列功能：<br>
 - dashboard: 多種儀錶板工具的組合混搭
-- timelion: 時間序列操作分析
+- timelion: `時間序列操作`分析
 - managements: index 管理，資料彙整設定
 
 ### 7-2 安裝流程
