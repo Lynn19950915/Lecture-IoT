@@ -23,7 +23,7 @@
 ### 8-3 時間序列分析
 .es (index=索引名稱, timefield=指定時間欄位, metric=函數：資料欄位)<br>
 .if (比較方式, 比較值, true 運算, false 運算)
-```
+```shell
 > .es(index=metricbeat-*, timefield="timestamp", metric="avg: system.cpu.user.pct")
 > .if(lt, 60, 100, 0)
 ```

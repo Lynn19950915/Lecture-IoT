@@ -14,12 +14,12 @@
 ---
 ### 4-2 安裝流程
 1. 下載 Metricbeat
-```
+```shell
 > wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.4.0-x86_64.rpm
 ```
 
 2. 安裝 Metricbeat
-```
+```shell
 # Uvh: 若有則升級、無則安裝
 > sudo rpm -Uvh metricbeat-7.4.0-x86_64.rpm
 ```
@@ -30,7 +30,7 @@
 | log 檔 | ./var/log/metricbeat |
 
 3. 設定與啟動
-```
+```shell
 > sudo vi /etc/metricbeat/metricbeat.yml
 setup.dashboards.enabled: true
 output.elasticsearch: hosts: ["localhost:9200"]
@@ -42,6 +42,6 @@ setup.kibana: hosts: "localhost:5601"
 ```
 
 4. 安裝後檢查
-```
+```shell
 > curl -XGET "http://localhost:9200/metricbeat-*/_search?pretty"
 ```

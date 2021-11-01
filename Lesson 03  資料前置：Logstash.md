@@ -12,12 +12,12 @@ Logstash 扮演`原始資料與儲存庫間的橋梁`，其工作分為三類：
 ---
 ### 3-2 安裝流程
 1. 下載 Logstash
-```
+```shell
 > wget https://artifacts.elastic.co/downloads/logstash/logstash-7.4.0.rpm
 ```
 
 2. 安裝 Logstash
-```
+```shell
 # Uvh: 若有則升級、無則安裝
 > sudo rpm -Uvh logstash-7.4.0.rpm
 ```
@@ -28,7 +28,7 @@ Logstash 扮演`原始資料與儲存庫間的橋梁`，其工作分為三類：
 | log 檔 | ./var/log/logstash |
 
 3. 安裝後檢查
-```
+```shell
 > cd /usr/share/logstash
 # 鍵盤為輸入源，screen 為輸出源
 > bin/logstash -e "input {stdin{}} output {stdout{}}"

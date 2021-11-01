@@ -10,7 +10,7 @@
   - RAM (記憶體): 4G 
   - HDD (硬碟): 20G
 - 安裝檢查：以 root 身分登入
-```
+```shell
 (terminal)
 # 檢查網路設定
 > ifconfig

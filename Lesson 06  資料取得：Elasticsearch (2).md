@@ -2,7 +2,7 @@
 
 ### 安裝流程
 1. 下載 jdk8、Elasticsearch
-```
+```shell
 > wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
 http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
 
@@ -10,7 +10,7 @@ http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096f
 ```
 
 2. 安裝 Elasticsearch
-```
+```shell
 > sudo yum remove java
 # Uvh: 若有則升級、無則安裝
 > sudo rpm -Uvh jdk-8u131-linux-x64.rpm
@@ -27,7 +27,7 @@ http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096f
 | log 檔 | ./var/log/elasticsearch |
 
 3. 設定與啟動
-```
+```shell
 > sudo vi /etc/sysconfig/elasticsearch
 JAVA_HOME=/usr/bin/java
 # 設定使用記憶體為 2G
@@ -51,7 +51,7 @@ elasticsearch - nproc 4096
 ```
 
 4. 啟動後檢查
-```
+```shell
 > sudo tail -20 /var/log/elasticsearch/es-lab.log
 > sudo service elasticsearch status
 
